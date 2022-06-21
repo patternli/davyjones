@@ -1,9 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@700&family=Rubik+Glitch&family=Water+Brush&display=swap');
-
-h1 {
-    font-family: 'Cinzel Decorative', cursive;
-}
+@use 'colors';
+@use 'grid';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@700&family=Poppins:ital,wght@0,400;1,200;1,700&display=swap');
+$base-font: 'Poppins', sans-serif;
+$dec-font: 'Cinzel', serif;
+$dec-font-alt: 'Cinzel Decorative', cursive;
 
 body {
-    font-family: 'Cinzel', serif;
+    font-family: $base-font;
+    font-size: 1rem;
+    font-weight: 400;
+    color: colors.$black;
+    line-height: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: $dec-font-alt;
+    color: colors.$field-drab;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    @media (min-width: grid.$medium-large){
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    margin: 2rem 0 2rem 0;
+}
+
+h2{
+    font-family: $dec-font;
+    color: colors.$field-drab;
+    font-size: 2.75rem;
+    line-height: 3rem;
+    @media (min-width: grid.$medium-large){
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+    }
+    margin: 2rem 0 2rem 0;
+}
+
+h3 {
+    font-family: $dec-font;
+    color: colors.$field-drab;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    @media (min-width: grid.$medium-large){
+        font-size: 2.75rem;
+        line-height: 3rem;
+    }
+    margin: 2rem 0 2rem 0;
+}
+
+h4 {
+    font-family: $base-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    max-width: 90ex;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: colors.$middle-green;
+    text-decoration: underline;
+    &:hover {
+        color: colors.$gray-50;
+        text-decoration: none;
+    }
+}
+
+.small-text {
+    font-family: $base-font;
+    font-size: .75rem;
+}
+
+.italic {
+    font-style: italic;
 }
