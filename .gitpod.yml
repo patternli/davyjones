@@ -1,7 +1,18 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm build # runs during prebuild
+  - name: 11ty
+    init: npx @11ty/eleventy# runs during prebuild
     command: npm start
+  - name: sass
+    init: |
+      gp sync-await bundle
+      npm install sass npm-run-all --save-dev
+    openMode: split-right
+  - name: serve
+    init: |
+      gp sync-await bundle
+      npm start
+    openMode: split-right
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
