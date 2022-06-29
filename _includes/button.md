@@ -1,0 +1,2 @@
+
+<a class="btn {{ class}}" href="{{ url }}">{{text}}</a>

@@ -1,0 +1,27 @@
+@use 'colors';
+
+.btn {
+    background-color: colors.$middle-green;
+    padding: .50rem;
+    border-radius: 0.25rem;
+    color: colors.$white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+    &:hover {
+        background-color: colors.$sacramento-state-green;
+        color: colors.$black;
+    }
+}
+
+.btn-secondary {
+    background-color: colors.$cyber-yellow;
+    color: colors.$black;
+    &:hover {
+        background-color: colors.$field-drab;
+    }
+}
+
+.btn-inverse {
+    border: 2px solid colors.$white;
+}
