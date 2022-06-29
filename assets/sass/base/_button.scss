@@ -25,3 +25,13 @@
 .btn-inverse {
     border: 2px solid colors.$white;
 }
+
+.btn-link {
+    color: colors.$sacramento-state-green;
+    background-color: colors.$white;
+    text-decoration: underline;
+    &:hover {
+        background-color: colors.$white;
+        color: colors.$gray-50;
+    }
+}
