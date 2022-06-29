@@ -7,7 +7,7 @@ title: Davy is Home
 ### does he want?
 #### Spock!
 
-{% include "button" text:"My Button" url:"#" %}
+{% include "button.md" text:"My Button" url:"#" %} {% include "button.md" text:"My Secondary Button" class:"btn-secondary" url:"#" %}
 
 Jump rottweiler maltese bite pit bull puppies shake, german shephard lab roll over bark [husky dog]() bowl. Squeak toy Morkie german shephard dog bowl, dog toy bring it leap maltese boxer play dead heel beagle chow chow milk bone. Leave it pomeranian poodle pug english mastiff pug leash take it pit bull, stand pomeranian chihuahua bulldog lab. Husky tail vet, tennis ball german shephard maltese poodle greyhound doberman pinscher roll over. Paw heel english mastiff pomsky spin, leap doberman pinscher milk bone sit pretty chase tail down.
 

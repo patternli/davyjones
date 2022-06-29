@@ -1,2 +1,2 @@
 
-<a class="btn btn-primary" href="{{ url }}">{{text}}</a>
+<a class="btn {{ class}}" href="{{ url }}">{{text}}</a>
