@@ -2,7 +2,6 @@
 tasks:
   - name: 11ty
     init: npx @11ty/eleventy# runs during prebuild
-    command: npm start
   - name: sass
     init: |
       gp sync-await bundle
