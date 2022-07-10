@@ -5,13 +5,13 @@ const client = contentful.createClient({
 });
 
 module.exports = function() {
-  return client.getEntries({ content_type: 'categories' })
+  return client.getEntries({ content_type: 'category' })
   .then(function(response) {
-    const categories = response.items
-    .map(function(categories) {
-      return categories.fields;
+    const category = response.items
+    .map(function(category) {
+      return category.fields;
     });
-    return categories;
+    return category;
   })
   .catch(console.error);
 };
