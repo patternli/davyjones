@@ -28,10 +28,10 @@ eleventyComputed:
 
 <h3>You May Also Like</h3>
 
-{{ product.type }}
+{{ product.type.fields.label }}
 
 {% for p in product.type  %}
-{{ p.title }}
+{{ p.type.fields.title }}
 {% endfor %}
 
 </main>
