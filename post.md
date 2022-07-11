@@ -4,7 +4,7 @@ pagination:
     data: post
     size: 1
     alias: post
-permalink:  "{{ post.slug }}/index.html"
+permalink:  "articles/{{ post.slug }}/index.html"
 eleventyComputed: 
     title: "{{ post.title }}"
 ---

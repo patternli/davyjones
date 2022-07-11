@@ -10,7 +10,7 @@ title: Davy is Home
 {% assign page = post | sort: "publishedDate" %}
 
 {% for p in page reversed %}
-<a href="{{ p.slug }}">{{p.title}}</a>
+<a href="articles/{{ p.slug }}">{{p.title}}</a>
 {% endfor %}
 
 {% for a in art %}
